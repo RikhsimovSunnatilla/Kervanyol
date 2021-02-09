@@ -1,0 +1,17 @@
+.main-navbar {
+
+    .dropdown-toggle:hover {
+        color: $color-yellow;
+        text-decoration: none;
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+        padding: 10px 0 30px 0;
+    }
+
+    .dropdown-item {
+        margin-right: 3rem;
+    }
+    
+}

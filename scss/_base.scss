@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button,
+button:focus {
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li,
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1280px !important;
+    }
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-26 {
+    font-size: 26px !important;
+}
+
+.fs-32 {
+    font-size: 32px !important;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.text-yellow {
+    color: $color-yellow;
+}
+
+.text-green {
+    color: $color-green;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-light-gray {
+    color: #c5c5c5;
+}
+
+.text-dark-blue {
+    color: $color-dark-blue;
+}
+
+.bg-yellow {
+    background-color: $color-yellow!important;
+}
+
+.bg-light {
+    background-color: $color-light!important;
+}
+
+.bg-gray {
+    background-color: $color-gray!important;
+}
+
+.bg-red {
+    background-color: #f51f1f!important;
+}
+
+.bg-green {
+    background-color: $color-green!important;
+}
+
+.btn-yellow {
+    color: #fff;
+    font-size: 16px;
+    background-color: $color-yellow;
+    box-shadow: 0 6px 5px rgb(255 193 7 / 40%);
+    padding: 11px 37px;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+    background-color: darken($color-yellow, 6%);
+}
+
+.btn-yellow:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255 193 7 / 25%);
+}
+
+.hover-text-yellow:hover {
+    color: $color-yellow;
+}
+
+.hover-bg-yellow:hover {
+    background-color: $color-yellow;
+}
+
+.navbar-toggler {
+    border: 0;
+    background-color: $color-yellow !important;
+    padding: 8px 10px;
+
+    i.fa-bars {
+        color: #fff;
+    }
+}
+
+.add-liked {
+    color: #7f7f7f;
+    font-size: 21px;
+    position: relative;
+    top: -14px;
+    right: 27px;
+    z-index: 1;
+
+    i.far {
+        position: absolute;
+        opacity: 1;
+        transition: opacity .2s ease-in-out;
+        padding: 5px;
+    }
+
+    i.fas {
+        position: absolute;
+        color: $color-yellow;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+        padding: 5px;
+    }
+
+    &:hover, &:visited {
+        i.far {
+            opacity: 0;
+        }
+        i.fas {
+            opacity: 1;
+        }
+    }
+}

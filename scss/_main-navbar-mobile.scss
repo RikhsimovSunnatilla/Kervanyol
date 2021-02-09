@@ -1,0 +1,75 @@
+.main-navbar-mobile {
+
+    .nav-link {
+        color: #000 !important;
+        padding: 10px 0 !important;
+
+        &:hover, &.active {
+            color: $color-yellow !important;
+            text-decoration: underline;
+        }
+    }
+
+    .liked:hover,
+    .basket:hover,
+    .search:hover {
+        opacity: 0.6;
+    }
+
+    .liked::after {
+        content: "1";
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: -6px;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.5;
+        border-radius: 50%;
+        background: #ff4f33;
+    }
+
+    .basket::after {
+        content: "3";
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: -6px;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 1.5;
+        border-radius: 50%;
+        background: #ff4f33;
+    }
+
+}
+
+@media (max-width: 410px) {
+
+    .main-navbar-mobile {
+        
+        .navbar-brand + .fs-26 {
+            margin-right: auto;
+            margin-left: auto;
+    
+            a {
+                margin-right: 18px !important;
+    
+                &:last-child {
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    
+    }
+}

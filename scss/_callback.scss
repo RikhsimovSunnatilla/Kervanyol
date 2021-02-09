@@ -1,0 +1,28 @@
+.callback {
+    padding: 30px 0 12px;
+
+    &__text {
+        color: #3c4348;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .callback {
+
+        &__text {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .callback {
+
+        &__text {
+            font-size: 24px;
+        }
+    }
+}

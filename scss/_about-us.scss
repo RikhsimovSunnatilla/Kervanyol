@@ -1,0 +1,16 @@
+.about-us {
+    padding: 70px 0;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us {
+    
+        img {
+            margin-bottom: 30px;
+        }
+    }
+}

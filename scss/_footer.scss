@@ -1,0 +1,36 @@
+.footer {
+
+    &__social {
+        font-size: 25px;
+        padding: 5px;
+
+        &:hover {
+            color: $color-yellow;
+            text-shadow: 0 3px 6px rgb(255 193 7 / 30%);
+        }
+
+    }
+
+    .nav .nav-link {
+        font-size: 14px;
+        padding: 3px 0;
+
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+
+    .btn-yellow {
+        padding: 9px 22px;
+    }
+
+    &__copyright {
+        font-family: "Myriad Pro", sans-serif;
+        background: #3c4348;
+
+        .text-yellow:hover {
+            color: #fff;
+        }
+    }
+
+}

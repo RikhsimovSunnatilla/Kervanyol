@@ -1,0 +1,47 @@
+.features {
+    padding: 70px 0 26px;
+
+    div[class^="col"]:hover {
+
+        .features__img {
+            opacity: 0;
+        }
+
+        .features__img--hover {
+            opacity: 1;
+        }
+
+        .features__title {
+            color: $color-yellow;
+        }
+
+    }
+
+    &__img {
+        min-height: 120px;
+        opacity: 1;
+        transition: all .2s ease;
+    }
+
+    &__img--hover {
+        min-height: 120px;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        transition: all .2s ease;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        transition: all .15s ease;
+    }
+
+    &__text {
+        color: #636363;
+    }
+
+}

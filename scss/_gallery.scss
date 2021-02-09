@@ -1,0 +1,40 @@
+.gallery {
+    padding: 70px 0 43px;
+
+    div[class^="col"]:hover .gallery__info {
+        opacity: 1;
+    }
+
+    &__img {
+        border-radius: 5px;
+    }
+
+    &__info {
+        width: 82%;
+        height: 89%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        transition: all .2s ease;
+        border-radius: 10px;
+        background-color: rgba(243 182 0 / 85%);
+        padding: 22px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .gallery {
+
+        &__info {
+            width: 270px !important;
+            height: 270px !important;
+        }
+        
+    }
+}

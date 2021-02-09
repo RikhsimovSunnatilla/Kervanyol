@@ -1,0 +1,30 @@
+.news {
+    padding: 65px 0 85px;
+
+    .card {
+        border-radius: 10px;
+        transition: all .2s ease;
+
+        &:hover {
+            box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+        }
+
+        &-img-top {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .news {
+
+        .btn-yellow {
+            font-size: 16px !important;
+            padding: 10px 44px !important;
+        }
+        
+    }
+}
